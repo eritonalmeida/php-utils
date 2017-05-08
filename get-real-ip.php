@@ -14,7 +14,7 @@ function get_real_ip()
     if (isset($_SERVER['HTTP_X_FORWARDED_FOR']) && !empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         $ips = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
         foreach ($ips as $ip) {
-            $ip = trim($ips[0]);
+            $ip = trim($ip);
             if (valid_ip($ip)) {
                 return $ip;
             }
