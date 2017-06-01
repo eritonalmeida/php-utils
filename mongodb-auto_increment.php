@@ -1,6 +1,7 @@
 <?php
-/**
- * require mongo-php-library https://github.com/mongodb/mongo-php-library
+/*
+ * require mongo-php-library 
+ * https://github.com/mongodb/mongo-php-library
  */
 require "vendor/autoload.php";
 
