@@ -6,7 +6,6 @@ require "vendor/autoload.php";
 
 $db = new MongoDB\Client();
 $database = 'my_database';
-$db->selectDatabase($database);
 
 $counters = $db->selectCollection($database, 'my_counters');
 $filter = array('id' => 'users');
